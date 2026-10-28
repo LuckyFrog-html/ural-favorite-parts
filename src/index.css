@@ -1,0 +1,44 @@
+body {
+  background-color: #f3f5f7;
+}
+
+.search-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: #f3f5f7;
+}
+
+.brand-scroll {
+  max-height: 360px;
+  overflow: auto;
+}
+
+.offers-scroll {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.offers-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.offers-table {
+  table-layout: fixed;
+  width: 100%;
+  min-width: 44rem;
+}
+
+/* Из-за виртуализации скачет ширина колонок */
+.offers-col-number { width: 9.5rem; }
+.offers-col-warehouse { width: 6.5rem; }
+.offers-col-price { width: 8.5rem; }
+.offers-col-stock { width: 5.5rem; }
+
+.offers-table th,
+.offers-table td {
+  overflow-wrap: anywhere;
+}
